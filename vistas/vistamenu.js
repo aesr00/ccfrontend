@@ -21,6 +21,14 @@ export default function Vistamenu() {
         <div className={styles.button1}>
 
         <button className={styles.button3}>
+          <Link href='/consultartodos'> Ver todos</Link>
+        </button>
+
+        </div>
+
+        <div className={styles.button1}>
+
+        <button className={styles.button3}>
           <Link href='/consultar'> Consultar</Link>
         </button>
 
