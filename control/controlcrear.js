@@ -12,7 +12,11 @@ export default async function controlCrear(cedula,nombre,apellido) {
 
       toast("creado")
 
-    }if (respuesta.status === 404) {
+    }else if (respuesta.status === 201) {
+
+      toast("creado")
+
+    }else if (respuesta.status === 404) {
         toast("hubo un error intente de nuevo")
       } else {
 

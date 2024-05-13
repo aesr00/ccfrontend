@@ -11,7 +11,7 @@ export default function Vistabuscar() {
     const [items, setItems] = useState('')
 
     const peticion = async()=>{
-        const res = await fetch(`https://d8dd269c-0af0-403c-88f1-40ec1cd4e53c.mock.pstmn.io/buscartodos?`)
+        const res = await fetch(`https://localhost:3000/buscartodos?`)
         const personas = await res.json()
         setItems(personas)
     }
